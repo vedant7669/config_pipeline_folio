@@ -5,7 +5,7 @@ FROM tomcat:9.0
 LABEL maintainer="vedant.shripad.arole@oracle.com"
 
 # Copy your (web application) into the Tomcat webapps directory
-COPY /scratch/app/product/varole/config_files/dist/Folio/* /usr/local/tomcat/webapps/
+COPY /srv/config_pipeline_folio/dist/Folio/* /usr/local/tomcat/webapps/
 
 # Applying permissions to files and directory
 RUN chmod 777 /usr/local/tomcat/bin/*
